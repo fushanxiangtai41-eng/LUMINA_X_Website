@@ -45,15 +45,13 @@ body::before {
   pointer-events: none;
   background:
     /* 細かいドットグリッド */
-    radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
     /* 大きなドット */
-    radial-gradient(circle, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1.5px, transparent 1.5px);
   background-size:
-    24px 24px,
-    72px 72px;
-  background-position: 0 0, 12px 12px;
-  mask-image: radial-gradient(ellipse at 50% 40%, black 40%, transparent 80%);
-  -webkit-mask-image: radial-gradient(ellipse at 50% 40%, black 40%, transparent 80%);
+    28px 28px,
+    84px 84px;
+  background-position: 0 0, 14px 14px;
 }
 
 .bg-orbs {
@@ -67,24 +65,24 @@ body::before {
 .orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(130px);
-  opacity: 0.1;
+  filter: blur(140px);
+  opacity: 0.12;
 }
 
 .orb-1 {
-  width: 550px;
-  height: 550px;
-  background: #3b4fa0;
-  top: -10%;
-  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: #4b5fc0;
+  top: -12%;
+  left: -12%;
 }
 
 .orb-2 {
-  width: 420px;
-  height: 420px;
-  background: #2a3a70;
-  bottom: -12%;
-  right: -12%;
+  width: 450px;
+  height: 450px;
+  background: #3a4a80;
+  bottom: -14%;
+  right: -14%;
 }
 
 /* 装飾：薄い幾何ライン */
@@ -93,11 +91,9 @@ body::before {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(255,255,255,0.012) 1px, transparent 1px);
-  background-size: 80px 80px;
-  mask-image: radial-gradient(ellipse at 60% 30%, black 25%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse at 60% 30%, black 25%, transparent 70%);
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 100px 100px;
 }
 
 /* ===== カード（共通） ===== */
