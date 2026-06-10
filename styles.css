@@ -691,6 +691,10 @@ body {
 .channel-pill-mp:hover { border-color: rgba(59, 130, 246, 0.45); }
 .channel-pill-mp .channel-icon { background: linear-gradient(135deg, #3b82f6, #60a5fa); }
 
+.channel-pill-youtube::before { background: linear-gradient(135deg, rgba(255, 0, 0, 0.12), transparent 70%); }
+.channel-pill-youtube:hover { border-color: rgba(255, 0, 0, 0.45); }
+.channel-pill-youtube .channel-icon { background: linear-gradient(135deg, #ff0000, #cc0000); }
+
 .channel-icon {
   flex-shrink: 0;
   display: grid;
